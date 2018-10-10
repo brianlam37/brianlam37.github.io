@@ -1,30 +1,80 @@
-.sidebar {
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    top: 0; /* Stay at the top */
-    right: 100px;
-    background-color: #000000;
+#navbar {
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    width: 100%; /* Set the width of the sidebar */
+    background-color: #044778;
+    display:block;
+    margin: 0px auto 0px auto;
 }
 
 /* The navigation menu links */
-.sidenav a {
-    padding: 6px 8px 6px 16px;
+#navbar a {
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #FFFFFF;
     display: block;
 }
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
+#navbar li{
+    display:inline-block;
+    padding-right: 20px;
 }
-
+/* When you mouse over the navigation links, change their color */
+#navbar a:hover {
+    color: #818181;
+}
+#git{
+    display:inline-block;
+    margin-left: 5%;
+    width:60%;
+}
+#menu{
+    display:inline-block;
+}
 /* Style page content */
 .main {
-    background-color: #cccccc;
-    margin-right:252px;
-    margin-left:252px;
+    padding:8px;
+    height:100%;
+    background-color: #232323;
+}
+
+.main a{
+    text-decoration: none;
+    display: block;
+    color: rgba(255,255,255,0.6);
+
+}
+.main a:hover{
+    color: #818181;
+}
+#outer{
+    position:;
+    height:100%;
+    left:0;
+    margin-left: 10%;
+    width:40%;
+
 
 }
 
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.main h1{
+
+}
+body{
+    left:0;
+    color: rgba(255,255,255,0.6);
+    padding-top: 30.8px; 
+    background-color: #FFFFFF;
+    background-image: url('bimage.png');
+    background-repeat: repeat;
+    overflow-y:auto
+    
+
+}
