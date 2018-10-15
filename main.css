@@ -32,6 +32,37 @@
 #menu{
     display:inline-block;
 }
+.dropbtn {
+    background-color: #044778;
+    color:#FFFFFF;
+    font-family:serif;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropcont {
+    display: none;
+    position: absolute;
+    background-color: #232323;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#dropdown-content a:hover {background-color: #f1f1f1}
+
+#dropdown:hover #dropcont {
+    display: block;
+}
+
+#dropdown:hover #dropbtn {
+    background-color: #3e8e41;
+}
 /* Style page content */
 .main {
     padding:8px;
@@ -74,7 +105,33 @@ body{
     background-color: #FFFFFF;
     background-image: url('bimage.png');
     background-repeat: repeat;
-    overflow-y:auto
+    overflow-y:auto;
+    font-family:serif;
     
+
+}
+.listcont li{
+    white-space: nowrap;
+}
+.listcont p{
+    white-space: normal;
+}
+.listcont li a{
+    padding:5px;
+    display: inline-block;
+    color:#FFFFFF;
+}
+.listcont li li{
+    padding:5px;
+    list-style-type: none;
+    white-space: normal;
+}
+
+.projbox{
+    padding:5px;
+    border-color:#818181;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
 
 }
