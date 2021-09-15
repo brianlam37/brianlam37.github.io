@@ -1,137 +1,42 @@
-#navbar {
-    position: fixed;
-    top: 0;
-    left:0;
-    right:0;
-    width: 100%; /* Set the width of the sidebar */
-    background-color: #044778;
-    display:block;
-    margin: 0px auto 0px auto;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
 }
 
-/* The navigation menu links */
-#navbar a {
-    text-decoration: none;
-    font-size: 25px;
-    color: #FFFFFF;
-    display: block;
+#nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: hsl(210, 100%, 20%);
+	align-items: center;
+	color: #fff;
 }
-#navbar li{
-    display:inline-block;
-    padding-right: 20px;
+#nav span {
+	margin-left: 1rem;
 }
-/* When you mouse over the navigation links, change their color */
-#navbar a:hover {
-    color: #818181;
+#nav div {
+	display: flex;
 }
-#git{
-    display:inline-block;
-    margin-left: 5%;
-    width:60%;
-}
-#menu{
-    display:inline-block;
-}
-.dropbtn {
-    background-color: #044778;
-    color:#FFFFFF;
-    font-family:serif;
-    font-size: 25px;
-    border: none;
-    cursor: pointer;
-}
-#dropdown {
-    position: relative;
-    display: inline-block;
+.nav-link {
+	display: block;
+	text-decoration: none;
+	padding: 1rem;
+	color: inherit;
 }
 
-#dropcont {
-    display: none;
-    position: absolute;
-    background-color: #232323;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.nav-link:hover {
+	background-color: hsl(210, 100%, 15%);
 }
-
-#dropdown-content a:hover {background-color: #f1f1f1}
-
-#dropdown:hover #dropcont {
-    display: block;
+header {
+	height: 100vh;
+	background: linear-gradient(to left, #333, #333);
 }
-
-#dropdown:hover #dropbtn {
-    background-color: #3e8e41;
-}
-/* Style page content */
-.main {
-    padding:8px;
-    height:100%;
-    background-color: #232323;
-}
-
-.main a{
-    text-decoration: none;
-    display: block;
-    color: rgba(255,255,255,0.6);
-
-}
-.main a:hover{
-    color: #818181;
-}
-#outer{
-    position:;
-    height:100%;
-    left:0;
-    margin-left: 10%;
-    width:40%;
-
-
-}
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.main h1{
-
-}
-body{
-    left:0;
-    color: rgba(255,255,255,0.6);
-    padding-top: 30.8px; 
-    background-color: #FFFFFF;
-    background-image: url('bimage.png');
-    background-repeat: repeat;
-    overflow-y:auto;
-    font-family:serif;
-    
-
-}
-.listcont li{
-    white-space: nowrap;
-}
-.listcont p{
-    white-space: normal;
-}
-.listcont li a{
-    padding:5px;
-    display: inline-block;
-    color:#FFFFFF;
-}
-.listcont li li{
-    padding:5px;
-    list-style-type: none;
-    white-space: normal;
-}
-
-.projbox{
-    padding:5px;
-    border-color:#818181;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-
+#hero {
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
